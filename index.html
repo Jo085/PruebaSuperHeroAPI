@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuentra tu SuperHero</title>
+    <!-- favicon -->
+    <link href="assets/img/favicon.ico" rel="icon" >    
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/46620748e1.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand text-light" id="brand" href="#">
+                <img src="assets/img/sh2.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                SuperHero
+              </a>
+            </div>
+          </nav>
+    </header>
+
+    <main class="container mx-5 px-5 pt-3">
+        <!-- Sección formulario -->
+         <section class="container mx-5 px-5">      
+            <img id="imgMain" class="d-block m-auto" src="assets/img/sh1.jpg" alt="Super Hero">
+            <h1 class="text-dark mt-3 px-5" id="title">Encuentra tu SuperHero</h1>
+            <!-- formulario -->
+            <form class="px-5">
+                <div class="mb-3">
+                  <label for="numId" class="form-label">Ingresa el número del SuperHero a buscar</label>
+                  <input id="numId" type="search" class="form-control" aria-describedby="Help">                  
+                </div>  
+                <button type="submit" class="btn btn-primary" id="btn">Buscar</button>           
+            </form>
+         </section>
+           <!-- Sección resultado búsqueda -->
+          <section class="resultado mt-5 d-none"> 
+            <div class="container text-center  mx-5">
+              <i class="fa-solid fa-bolt-lightning  text-primary m-2 fs-3"></i>
+              <h2 class="text-warning d-inline-block">HÉROE ENCONTRADO</h2>
+              <i class="fa-solid fa-bolt-lightning text-primary m-2 fs-3"></i>
+              <div class="row mt-5">
+                <div class="col-6 px-0">
+                    <div class="container p-2 mx-2 shadow border border-2 border-dark-subtle text-center" >
+                        <!-- Card con información del héroe --> 
+                        <div class="card bg-dark mb-3" style="max-width: 540px;">
+                          <div class="row g-0">
+                            <div class="col-md-4 ">
+                              <img id="imagen" src="" class="img-fluid rounded-start"  alt="Hero">
+                            </div>
+                            <div class="col-md-8">                            
+                              <div class="card-body">
+                                <h5 id="Nombre" class="card-title text-light"></h5>                                
+                                <ul class="mt-4 list-group list-group-flush text-start bg-dark rounded">
+                                  <li id="Conexiones" class="list-group-item bg-dark border-1 border-warning-subtle text-light "></lli>
+                                  <li id="PublicadoPor" class="list-group-item bg-dark border border-primary-subtle text-light"></li>
+                                  <li id="Ocupacion" class="list-group-item bg-dark border border-danger-subtle text-light"></li>
+                                  <li id="PrimeraAparicion" class="list-group-item bg-dark border border-warning-subtle text-light"></li>
+                                  <li id="Altura" class="list-group-item bg-dark border border-primary-subtle text-light"></li>
+                                  <li id="Peso" class="list-group-item bg-dark border border-danger-subtle text-light"></li>
+                                  <li id="Alianzas" class="list-group-item bg-dark border border-warning-subtle text-light"></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                      </div>                     
+                    </div>
+                </div>
+
+                <div class="col-6 ">
+                  <div class="container p-2 mx-2 shadow border border-2 border-dark-subtle bg-dark">   
+                      <!-- Gráfico --> 
+                      <div id="chartContainer" style="height: 300px; width: 100%;">                      
+                      </div>
+                  </div>
+                </div>                
+              </div>
+            </div>          
+        </section>
+    </main>   
+
+    <footer class="bg-dark p-4 mt-5"></footer>
+
+     <!-- llamado canvas js -->
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>    
+     <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

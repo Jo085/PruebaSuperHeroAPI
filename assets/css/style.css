@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#brand {
+  font-family: "Comic Neue";
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+#imgMain {
+  width: 40%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#btn:hover{
+  background-color: #e50300;
+  color: yellow;
+}
+
+.resultado h2 {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.5rem;
+  -webkit-text-stroke: 1.5px #e50300;
+}
+
+.card-title {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+footer {
+  background-image: url(../img/cartoon-comic.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
